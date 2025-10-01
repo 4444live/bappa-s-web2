@@ -32,42 +32,9 @@
   <h1>🇮🇳 Jai hind 🇮🇳</h1>
   <h2>🙏 updated error bye bye👍</h2>
   <h3>ESP32 Blynk Relay Code</h3>
-<pre><code>
-#define BLYNK_TEMPLATE_ID "TMPL3Wd6a72ZX"
-#define BLYNK_TEMPLATE_NAME "Bappa system"
-#define BLYNK_AUTH_TOKEN "RR0WeGQWEM2Ca2ibTz4O4NVJ_aIxyjzd"
-
-#include &lt;WiFi.h&gt;
-#include &lt;WiFiClient.h&gt;
-#include &lt;BlynkSimpleEsp32.h&gt;
-
-char ssid[] = "bondhu_wifi";
-char pass[] = "amar_secret_password";
-
-#define RELAY_PIN 2  // ESP32 এর পিন 2 -> Relay
-
-BLYNK_WRITE(V1)
-{
-  int relayState = param.asInt();  // 1 = ON, 0 = OFF
-  digitalWrite(RELAY_PIN, relayState);
-}
-
-void setup()
-{
-  Serial.begin(115200);
-  pinMode(RELAY_PIN, OUTPUT);
-  digitalWrite(RELAY_PIN, LOW); // Start with OFF
-  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
-}
-
-void loop()
-{
-  Blynk.run();
-}
-</code></pre>
 <h4>picture</h4>
 <img src="images/file_00000000d478620a837925db18b2c8c2.png" alt="my photo" width="300">
-  <p>bappa automation system</p>
+  <p>bappa system</p>
 <img src="file_00000000d478620a837925db18b2c8c2.png" alt="আমার ছবি" width="300">
   <!-- ⬇️ এখানে চাইলে নতুন কিছু যোগ করতে পারবি -->
   <p>এটা নতুন করে add করা হলো</p>
