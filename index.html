@@ -30,33 +30,7 @@
 </head>
 <body>
   <h1>🇮🇳 Jai hind 🇮🇳</h1>
-  <h2>🙏মানুষ মানুষের জন্য 👍</h2>
-<pre><code>
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
-
-@app.route("/", methods=["GET", "POST"])
-def home():
-    result = ""
-    if request.method == "POST":
-        number = int(request.form["number"])
-        if number % 2 == 0:
-            result = f"{number} is Even ✅"
-        else:
-            result = f"{number} is Odd 🔹"
-    return f"""
-    <h1>Odd & Even Checker</h1>
-    <form method="POST">
-        Enter a number: <input type="text" name="number">
-        <input type="submit" value="Check">
-    </form>
-    <p>{result}</p>
-    """
-
-if __name__ == "__main__":
-    app.run(debug=True)
-</code></pre>
+  <h2>🙏 updated error bye bye👍</h2>
   <h3>ESP32 Blynk Relay Code</h3>
 <pre><code>
 #define BLYNK_TEMPLATE_ID "TMPL3Wd6a72ZX"
